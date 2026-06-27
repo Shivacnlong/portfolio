@@ -1,28 +1,93 @@
-When I was in China, most people thought my focus was factories, products, exhibitions, or supplier meetings.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Doesn't Build Businesses. Sales Do.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div style="max-width:900px;margin:60px auto;padding:20px;">
+
+<img src="1782274346111.jpeg"
+style="width:100%;border-radius:16px;margin-bottom:30px;">
+
+<h1>China Doesn't Build Businesses. Sales Do.</h1>
+
+<p><strong>27 June 2026</strong></p>
+
+<hr>
+
+<p>
+
+When I was in China, most people thought my focus was factories,
+products, exhibitions, or supplier meetings.
+
+<br><br>
 
 But the truth is different.
+
+<br><br>
+
 60% of my focus was on selling.
 
-While walking through markets in Shenzhen, sitting in factories in Dongguan, or traveling across China, my mind was still in India.
+<br><br>
 
-Calling customers.
-Replying to inquiries.
-Negotiating deals.
-Following up on payments.
+While walking through markets in Shenzhen, sitting in factories in Dongguan,
+or traveling across China, my mind was still in India.
+
+<br><br>
+
+Calling customers.<br>
+Replying to inquiries.<br>
+Negotiating deals.<br>
+Following up on payments.<br>
 Closing orders.
 
-Because factories don’t pay you.
-Products don’t pay you.
-Supplier visits don’t pay you.
+<br><br>
+
+Because factories don't pay you.<br>
+Products don't pay you.<br>
+Supplier visits don't pay you.<br>
 Customers pay you.
 
-Many entrepreneurs spend months searching for the perfect product, perfect supplier, perfect packaging, and perfect logo.
+<br><br>
 
-But they forget the most important thing
+Many entrepreneurs spend months searching for the perfect product,
+perfect supplier, perfect packaging, and perfect logo.
+
+<br><br>
+
+But they forget the most important thing.
+
+<br><br>
 
 Someone has to buy it.
 
+<br><br>
+
 If sales stop, everything stops.
-No matter where you are in the world, your business grows when you stay close to customers.
+
+<br><br>
+
+No matter where you are in the world,
+your business grows when you stay close to customers.
+
+<br><br>
+
 Factories create products.
+
+<br><br>
+
 Sales create businesses.
+
+</p>
+
+</div>
+
+</body>
+</html>
+```
