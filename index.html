@@ -1,51 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LISHTO | Home</title>
+
+<title>LISHTO | China Sourcing Platform</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 <header>
+
 <nav class="navbar">
-<div class="logo">LISHTO</div>
+
+<div class="logo">
+LISHTO
+</div>
+
 <ul class="nav-links">
+
 <li><a href="index.html">Home</a></li>
+
 <li><a href="articles.html">Articles</a></li>
+
 <li><a href="products.html">Products</a></li>
+
 <li><a href="Library.html">Library</a></li>
+
 <li><a href="contact.html">Contact</a></li>
+
 <li><a href="partner.html">Partner</a></li>
+
 </ul>
+
 </nav>
+
 </header>
 
-<main>
-<section class="hero">
-<div class="hero-left">
-<span class="tag">13+ Years • China Sourcing Expert</span>
-<h1>Build Better Products.<br>Source Smarter.</h1>
-<p>Helping brands and entrepreneurs source premium products from China, connect with trusted manufacturers, and build successful businesses through practical sourcing knowledge.</p>
-<div class="hero-buttons">
-<a href="articles.html" class="btn">Read Articles</a>
-<a href="products.html" class="btn-outline">View Products</a>
+<!-- LIVE TOP BAR -->
+
+<section class="market-bar">
+
+<div class="market-card">
+
+<h4>INR → USD</h4>
+
+<p id="usdRate">Loading...</p>
+
 </div>
+
+<div class="market-card">
+
+<h4>INR → RMB</h4>
+
+<p id="cnyRate">Loading...</p>
+
+</div>
+
+<div class="market-update">
+
+Updated
+
+<span id="updatedTime">--</span>
+
+</div>
+
+</section>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<span class="tag">
+13+ Years • China Sourcing Expert
+</span>
+
+<h1>
+
+Build Better Products.<br>
+
+Source Smarter.
+
+</h1>
+
+<p>
+
+Helping entrepreneurs and brands source premium products directly from trusted Chinese manufacturers.
+
+Build reliable supply chains, discover OEM factories and grow your business with confidence.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="articles.html" class="btn">
+
+Read Articles
+
+</a>
+
+<a href="products.html" class="btn-outline">
+
+View Products
+
+</a>
+
+</div>
+
 </div>
 
 <div class="hero-right">
-<div class="hero-card">
-<h2>LISHTO</h2>
-<p>✔ China Sourcing</p>
-<p>✔ OEM / ODM Manufacturing</p>
-<p>✔ Product Development</p>
-<p>✔ Factory Verification</p>
-<p>✔ Business Resources</p>
+
+<div class="dashboard">
+
+<h2>
+
+China Business Dashboard
+
+</h2>
+
+<div class="dashboard-item">
+
+<div>
+
+India Time
+
 </div>
+
+<div id="indiaClock">
+
+Loading...
+
 </div>
+
+</div>
+
+<div class="dashboard-item">
+
+<div>
+
+Shenzhen Time
+
+</div>
+
+<div id="chinaClock">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="dashboard-item">
+
+<div>
+
+INR → USD
+
+</div>
+
+<div id="dashboardUsd">
+
+Loading...
+
+</div>
+
+</div>
+
+<div class="dashboard-item">
+
+<div>
+
+INR → RMB
+
+</div>
+
+<div id="dashboardCny">
+
+Loading...
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-</main>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2 id="count1">
+
+13+
+
+</h2>
+
+<p>
+
+Years Experience
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="count2">
+
+200+
+
+</h2>
+
+<p>
+
+Chinese Business Connections
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>
+
+OEM / ODM
+
+</h2>
+
+<p>
+
+Manufacturing Support
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>
+
+Import
+
+</h2>
+
+<p>
+
+China → India
+
+</p>
+
+</div>
+
+</section>
+
+<!-- NEWS -->
+
+<section class="news">
+
+<h2>
+
+Latest China Business News
+
+</h2>
+
+<div class="news-grid" id="newsContainer">
+
+<div class="news-card">
+
+Loading latest news...
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SHIPPING -->
+
+<section class="shipping">
+
+<h2>
+
+China Shipping Guide
+
+</h2>
+
+<div class="shipping-grid">
+
+<div class="ship-card">
+
+🚢
+
+<h3>
+
+Sea Freight
+
+</h3>
+
+<p>
+
+35–45 Days
+
+</p>
+
+</div>
+
+<div class="ship-card">
+
+✈️
+
+<h3>
+
+Air Freight
+
+</h3>
+
+<p>
+
+7–10 Days
+
+</p>
+
+</div>
+
+<div class="ship-card">
+
+📦
+
+<h3>
+
+Express Courier
+
+</h3>
+
+<p>
+
+3–7 Days
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CATEGORY -->
+
+<section class="category">
+
+<h2>
+
+Popular Categories
+
+</h2>
+
+<div class="category-grid">
+
+<a href="mobile.html" class="category-card">
+
+📱
+
+<span>
+
+Mobile Accessories
+
+</span>
+
+</a>
+
+<div class="category-card">
+
+💻
+
+<span>
+
+Computer Accessories
+
+</span>
+
+</div>
+
+<div class="category-card">
+
+⌚
+
+<span>
+
+Wearables
+
+</span>
+
+</div>
+
+<div class="category-card">
+
+🧸
+
+<span>
+
+Toys
+
+</span>
+
+</div>
+
+<div class="category-card">
+
+👕
+
+<span>
+
+Clothing
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 LISHTO
+
+Made with ❤️ for China–India Business
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
