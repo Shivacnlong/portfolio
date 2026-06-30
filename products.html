@@ -1,49 +1,71 @@
-<main style="max-width:1200px;margin:80px auto;padding:20px;">
+<main class="products-page" style="max-width:1200px;margin:80px auto;padding:20px;">
 
-<h1 style="text-align:center;font-size:42px;margin-bottom:50px;">
-Products
-</h1>
+  <h1 style="text-align:center;font-size:42px;margin-bottom:50px;">
+    Products
+  </h1>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;">
+  <div class="products-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;">
 
-<a href="mobile.html" style="text-decoration:none;color:#000;">
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
-<h2>📱 Mobile Accessories</h2>
-</div>
-</a>
+    <a href="mobile.html" class="product-card" style="text-decoration:none;color:#fff;">
+      <div style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+        <h2>📱 Mobile Accessories</h2>
+      </div>
+    </a>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>💻 Computer Accessories</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>💻 Computer Accessories</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>⌚ Wearables</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>⌚ Wearables</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>🧸 Toys</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>🧸 Toys</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>👕 Clothing</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>👕 Clothing</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>🐶 Pet Products</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>🐶 Pet Products</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>💄 Beauty</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>💄 Beauty</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>🔥 Trending</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>🔥 Trending</h2>
+    </div>
 
-<div style="background:#fff;padding:35px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;">
-<h2>🔞 Adult 18+</h2>
-</div>
+    <div class="product-card" style="background:rgba(255,255,255,.04);padding:35px;border-radius:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center;transition:.3s;">
+      <h2>🔞 Adult 18+</h2>
+    </div>
 
-</div>
+  </div>
 
 </main>
+.products-page{
+  background:
+    radial-gradient(circle at top right, #c61f2b20, transparent 35%),
+    radial-gradient(circle at bottom left, #005dff18, transparent 30%),
+    linear-gradient(180deg, #07111f, #050b14) !important;
+  color:#fff;
+  min-height:100vh;
+}
+.products-grid .product-card:hover div{
+  transform: translateY(-6px);
+  background: rgba(255,255,255,.07) !important;
+}
+.products-grid a{
+  color:#fff !important;
+  text-decoration:none;
+}
+.products-grid h2{
+  color:#fff !important;
+  margin:0;
+  font-size:24px;
+  line-height:1.4;
+}
