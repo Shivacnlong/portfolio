@@ -1103,10 +1103,13 @@ gap:28px;
 }
 
 .news-content .hero-badge{
-    display:flex;
-    justify-content:flex-start;
+    display:inline-flex;
     align-items:center;
-    margin-bottom:14px;
+    padding:6px;
+    border-radius:14px;
+    background:rgba(0,212,255,.08);
+    border:1px solid rgba(0,212,255,.18);
+    margin-bottom:18px;
 }
 .news-card::after{
 
@@ -2128,16 +2131,18 @@ font-size:32px;
 }
 
 .news-content .hero-badge span{
-    display:inline-flex;
+    display:flex;
     align-items:center;
-    background:rgba(0,212,255,.12);
-    color:#00d4ff;
-    border:1px solid rgba(0,212,255,.35);
-    padding:7px 14px;
-    border-radius:50px;
-    font-size:12px;
-    font-weight:600;
-    letter-spacing:.08em;
+    justify-content:center;
+    padding:10px 18px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#00d4ff,#008cff);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    box-shadow:0 8px 20px rgba(0,212,255,.25);
 }
 
 .article-meta{
