@@ -2409,3 +2409,115 @@ font-size:32px;
 }
 
 }
+/*================ CONTACT PAGE ================*/
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:30px;
+}
+
+.contact-card{
+    position:relative;
+    background:rgba(20,25,40,.78);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:34px;
+    overflow:hidden;
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    transition:.35s ease;
+}
+
+.contact-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,
+        rgba(0,212,255,.05),
+        rgba(255,255,255,0));
+    opacity:0;
+    transition:.35s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+    border-color:#00d4ff;
+    box-shadow:
+        0 0 35px rgba(0,212,255,.18),
+        0 25px 55px rgba(0,0,0,.45);
+}
+
+.contact-card:hover::before{
+    opacity:1;
+}
+
+.contact-card h2{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:24px;
+    color:#fff;
+}
+
+.contact-card p{
+    color:#c2cad8;
+    line-height:1.9;
+    margin-bottom:14px;
+}
+
+.contact-card strong{
+    color:#fff;
+}
+
+.contact-card i{
+    width:22px;
+    color:#00d4ff;
+    margin-right:8px;
+}
+
+.contact-wide{
+    grid-column:1/-1;
+    text-align:center;
+}
+
+.contact-wide .read-btn{
+    margin-top:18px;
+}
+
+.contact-card img{
+    width:220px;
+    max-width:100%;
+    display:block;
+    margin:25px auto;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.contact-card:hover img{
+    transform:scale(1.03);
+}
+
+@media(max-width:768px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-card{
+    padding:24px;
+}
+
+.contact-wide{
+    grid-column:auto;
+}
+
+.contact-card h2{
+    font-size:24px;
+}
+
+.contact-card img{
+    width:180px;
+}
+
+}
