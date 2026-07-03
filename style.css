@@ -2320,6 +2320,7 @@ font-size:32px;
         rgba(255,255,255,0));
     opacity:0;
     transition:.35s;
+    pointer-events:none;
 }
 
 .library-card:hover{
@@ -2438,6 +2439,7 @@ font-size:32px;
         rgba(255,255,255,0));
     opacity:0;
     transition:.35s;
+    pointer-events:none;
 }
 
 .contact-card:hover{
