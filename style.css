@@ -10,3 +10,8 @@
     position:relative;
     z-index:1;
 }
+
+.bg-grid,
+.bg-glow {
+    pointer-events: none;
+}
